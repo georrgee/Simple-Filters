@@ -82,7 +82,7 @@
                                                 <rect key="frame" x="0.0" y="71" width="136" height="50"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blur_bg" translatesAutoresizingMaskIntoConstraints="NO" id="tSd-1Y-Qwx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="50.000000000000227"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="136" id="0vq-sX-CWm"/>
                                                             <constraint firstAttribute="height" constant="49.999999999999773" id="j3d-1R-EYg"/>
@@ -135,7 +135,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noir_bg" translatesAutoresizingMaskIntoConstraints="NO" id="WUW-6I-wox">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.00000000000023" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noir" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpA-WT-c97" userLabel="Noir">
                                                         <rect key="frame" x="51" y="13" width="34" height="24"/>
