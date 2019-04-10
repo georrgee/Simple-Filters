@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="400" id="R8p-Dq-ita"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="Qoz-Es-C4I" userLabel="4 Button Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="Qoz-Es-C4I" userLabel="4 Button Stack View">
                                 <rect key="frame" x="16" y="449" width="343" height="121"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="CxY-LH-zRe" userLabel="Left Buttons Stack View">
@@ -65,15 +64,17 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="2ub-cg-Rnd" firstAttribute="centerY" secondItem="95S-RU-cFf" secondAttribute="centerY" id="1aU-Ck-j6c"/>
+                                                    <constraint firstItem="2ub-cg-Rnd" firstAttribute="leading" secondItem="95S-RU-cFf" secondAttribute="leading" id="1CI-P4-q9w"/>
+                                                    <constraint firstItem="a33-7g-phY" firstAttribute="top" secondItem="95S-RU-cFf" secondAttribute="top" id="2lS-Di-bQo"/>
                                                     <constraint firstItem="Eqs-d1-JWe" firstAttribute="centerX" secondItem="95S-RU-cFf" secondAttribute="centerX" id="782-gh-gTi"/>
-                                                    <constraint firstItem="2ub-cg-Rnd" firstAttribute="centerX" secondItem="95S-RU-cFf" secondAttribute="centerX" id="DRq-mQ-Jn9"/>
+                                                    <constraint firstItem="a33-7g-phY" firstAttribute="leading" secondItem="95S-RU-cFf" secondAttribute="leading" id="JIa-8X-ird"/>
+                                                    <constraint firstItem="2ub-cg-Rnd" firstAttribute="top" secondItem="95S-RU-cFf" secondAttribute="top" id="MK8-57-8y2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2ub-cg-Rnd" secondAttribute="bottom" id="R61-QH-GcD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="a33-7g-phY" secondAttribute="bottom" id="RXH-86-wIg"/>
                                                     <constraint firstAttribute="height" constant="50" id="UZf-92-ld7"/>
                                                     <constraint firstItem="Eqs-d1-JWe" firstAttribute="centerY" secondItem="95S-RU-cFf" secondAttribute="centerY" id="WPt-jG-jw0"/>
-                                                    <constraint firstAttribute="trailing" secondItem="a33-7g-phY" secondAttribute="trailing" id="Yys-tj-XlL"/>
-                                                    <constraint firstItem="a33-7g-phY" firstAttribute="top" secondItem="95S-RU-cFf" secondAttribute="top" id="h9w-nk-2X5"/>
-                                                    <constraint firstItem="a33-7g-phY" firstAttribute="leading" secondItem="95S-RU-cFf" secondAttribute="leading" id="oNN-0d-Sbf"/>
-                                                    <constraint firstAttribute="bottom" secondItem="a33-7g-phY" secondAttribute="bottom" id="qF7-oL-C5H"/>
+                                                    <constraint firstAttribute="trailing" secondItem="a33-7g-phY" secondAttribute="trailing" id="g5j-fj-paq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2ub-cg-Rnd" secondAttribute="trailing" id="ssK-G5-GEn"/>
                                                     <constraint firstAttribute="width" constant="136" id="tor-fM-KeW"/>
                                                 </constraints>
                                             </view>
@@ -269,7 +270,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="blurButtonView" destination="Wg4-MU-sAH" id="5v4-ud-BRg"/>
                         <outlet property="imageView" destination="yq3-Sd-ky0" id="CtH-Wv-Wwe"/>
+                        <outlet property="noirButtonView" destination="jVk-0k-G0f" id="ynB-Z2-N5I"/>
+                        <outlet property="processEffectView" destination="Y2d-LV-X6b" id="wor-bC-HyK"/>
+                        <outlet property="resetButtonView" destination="Emv-bG-pSL" id="yjj-Rv-wc4"/>
+                        <outlet property="sepiaButtonView" destination="95S-RU-cFf" id="Eex-x5-NJB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
