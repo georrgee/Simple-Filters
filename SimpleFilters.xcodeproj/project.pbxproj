@@ -12,6 +12,7 @@
 		367A8C53225E648800D3FC96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367A8C51225E648800D3FC96 /* Main.storyboard */; };
 		367A8C55225E648A00D3FC96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367A8C54225E648A00D3FC96 /* Assets.xcassets */; };
 		367A8C58225E648A00D3FC96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367A8C56225E648A00D3FC96 /* LaunchScreen.storyboard */; };
+		367A8C63225E65F600D3FC96 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A8C62225E65F600D3FC96 /* Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		367A8C54225E648A00D3FC96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		367A8C57225E648A00D3FC96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		367A8C59225E648A00D3FC96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		367A8C62225E65F600D3FC96 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		367A8C4C225E648800D3FC96 /* SimpleFilters */ = {
 			isa = PBXGroup;
 			children = (
+				367A8C61225E65C500D3FC96 /* Model */,
+				367A8C60225E65C000D3FC96 /* View */,
+				367A8C5F225E65AD00D3FC96 /* Controller */,
 				367A8C4D225E648800D3FC96 /* AppDelegate.swift */,
-				367A8C4F225E648800D3FC96 /* ViewController.swift */,
-				367A8C51225E648800D3FC96 /* Main.storyboard */,
 				367A8C54225E648A00D3FC96 /* Assets.xcassets */,
-				367A8C56225E648A00D3FC96 /* LaunchScreen.storyboard */,
 				367A8C59225E648A00D3FC96 /* Info.plist */,
 			);
 			path = SimpleFilters;
+			sourceTree = "<group>";
+		};
+		367A8C5F225E65AD00D3FC96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				367A8C4F225E648800D3FC96 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		367A8C60225E65C000D3FC96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				367A8C51225E648800D3FC96 /* Main.storyboard */,
+				367A8C56225E648A00D3FC96 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		367A8C61225E65C500D3FC96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				367A8C62225E65F600D3FC96 /* Filter.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				367A8C50225E648800D3FC96 /* ViewController.swift in Sources */,
+				367A8C63225E65F600D3FC96 /* Filter.swift in Sources */,
 				367A8C4E225E648800D3FC96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WCCWSFG99;
 				INFOPLIST_FILE = SimpleFilters/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WCCWSFG99;
 				INFOPLIST_FILE = SimpleFilters/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
