@@ -1,6 +1,5 @@
 //  ViewController.swift
 //  SimpleFilters
-
 //  Created by George Garcia on 4/10/19.
 //  Copyright © 2019 George Garcia. All rights reserved.
 
